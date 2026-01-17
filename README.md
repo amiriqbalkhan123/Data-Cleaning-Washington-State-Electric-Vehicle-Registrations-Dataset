@@ -4,13 +4,21 @@ This document reconstructs and documents all cleaning, validation, and modeling 
 
 0️⃣ Raw Dataset Overview
 Source: U.S. Electric Vehicle Population Data
-Initial Shape: 269,673 rows × 17 columns
+
+Initial Shape: 269,673 rows × 17 columnn
+
 Key Issues Observed in Raw Data
+
 Large number of missing values in critical columns
+
 Incorrect data types (identifiers stored as numbers)
+
 Logically inconsistent values (e.g., BEVs with zero electric range)
+
 Unvalidated model years
+
 Redundant or low-value columns
+
 No enforced geographic bounds
 
 1️⃣ Column Standardization
