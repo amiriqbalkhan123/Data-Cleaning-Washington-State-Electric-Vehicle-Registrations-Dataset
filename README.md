@@ -1,4 +1,4 @@
-Electric Vehicle Dataset (USA) – Full Data Cleaning Documentation (0 → 100)
+Electric Vehicle Dataset (USA) – Full Data Cleaning Documentation
 
 This document reconstructs and documents all cleaning, validation, and modeling work performed on the raw dataset, based on a direct comparison between the raw dataset and the final cleaned dataset.
 
@@ -46,7 +46,7 @@ Impact
 Prevents analytical and ML distortion
 
 
-4️⃣ Data Type Corrections (45 → 60)
+4️⃣ Data Type Corrections 
 Raw Problems
 postal_code stored as integer
 census_tract_2020 stored as numeric
@@ -56,7 +56,7 @@ Why This Matters
 Prevents leading-zero loss
 Correct semantic meaning
 
-5️⃣ Model Year Validation (60 → 70)
+5️⃣ Model Year Validation 
 Raw Issue
 Presence of future or unrealistic model years
 Actions Taken
@@ -64,7 +64,7 @@ Restricted model years to 1999–2025
 Result
 Dataset reflects realistic vehicle population
 
-6️⃣ Geographic Validation (70 → 85)
+6️⃣ Geographic Validation
 Raw State
 Coordinates not explicitly validated
 Actions Taken
@@ -81,7 +81,7 @@ Result:::
 Final dataset: 259,237 rows × 16 columns
 
 
-8️⃣ Final Validation & Quality Assurance (95 → 100)
+8️⃣ Final Validation & Quality Assurance
 Final Checks
 No missing values
 No duplicates
@@ -163,10 +163,13 @@ Removed duplicates
 Standardized column naming
 
 📈 Quality Improvement Summary
+
+
 Aspect	                      Kaggle Dataset       Updated Dataset
+
 Missing valueshandled	             ❌	                    ✅
-Logical consistency	               ❌	                    ✅
+Logical consistency	               ❌	                  ✅
 Identifier semantics	             ❌	                    ✅
 Geographic validation	             ❌	                    ✅
-Documentation	                     ❌	                    ✅
+Documentation	                     ❌	                  ✅
 Analysis-ready	                   ❌	                    ✅
